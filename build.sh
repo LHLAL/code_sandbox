@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 默认镜像名称
-IMAGE_NAME="manus-sandbox"
+IMAGE_NAME="code-sandbox"
 
 echo "Select target architecture:"
 echo "1) x86_64 (Standard Linux)"
