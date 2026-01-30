@@ -1,4 +1,4 @@
-# Manus Safe Sandbox - 生产级 Python 执行沙箱
+# code Sandbox - 生产级 Python 执行沙箱
 
 ## 概述
 
