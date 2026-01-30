@@ -1,0 +1,26 @@
+port: 8000
+host: "0.0.0.0"
+workers: 4
+max_thread_pool_size: 100
+rate_limit: "100/minute"
+timeout: 5
+memory_limit: "128m"
+
+python_restricted_builtins:
+  - "open"
+  - "eval"
+  - "exec"
+  - "compile"
+  - "globals"
+  - "locals"
+  - "__import__"
+
+python_forbidden_modules:
+  - "os"
+  - "sys"
+  - "subprocess"
+  - "shutil"
+  - "socket"
+  - "requests"
+
+nodejs_enabled: false
