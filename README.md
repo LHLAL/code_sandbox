@@ -61,12 +61,12 @@ chmod +x build.sh
 **手动构建示例**：
 ```bash
 # 构建 x86_64 镜像
-docker build -f Dockerfile.x86 -t manus-sandbox:x86_64 .
+docker build -f Dockerfile.x86 -t code-sandbox:x86_64 .
 
 # 运行镜像（挂载宿主机配置）
 docker run -d -p 8000:8000 \
     -v $(pwd)/config/config.yaml:/app/config/config.yaml \
-    manus-sandbox:x86_64
+    code-sandbox:x86_64
 ```
 
 ### 4. gVisor 增强隔离 (生产环境推荐)
